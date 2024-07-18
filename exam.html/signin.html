@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Website Signup</title>
+    <link rel="stylesheet" href="signin.css">
+     Bootstrap CSS 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="login-container text-center p-4">
+            <h1>Sign Up</h1>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="newUsername">Username :</label>
+                    <input type="text" class="form-control" id="newUsername" name="newUsername" required>
+                </div>
+                <div class="form-group">
+                    <label for="newPassword">Password :</label>
+                    <input type="password" class="form-control" id="newPassword" name="newPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password :</label>
+                    <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
+                </div>
+                <div>
+                    <a href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">  
+                <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+                <p class="my-2">Already have an account? <a href="C:\Users\SARO'S\.vscode\extensions\html\exam.html\gaming.html">Login here</a></p>
+                <p id="signupErrorMessage" class="error-message"></p></div>
+            </form>
+        </div>
+    </div>
+
+    <Bootstrap JS and dependencies>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+            const newUsername = document.getElementById('newUsername').value;
+            const newPassword = document.getElementById('newPassword').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            const signupErrorMessage = document.getElementById('signupErrorMessage');
+
+            // Clear any previous error messages
+            signupErrorMessage.textContent = '';
+
+            // Basic validation
+            if (newPassword !== confirmPassword) {
+                signupErrorMessage.textContent = 'Passwords do not match';
+                return;
+            }
+
+            // Here you would typically send the signup data to your server for processing
+            // This is a mock example, replace it with your actual signup logic
+            alert('Signup successful!');
+            window.location.href = 'game.html'; // Redirect to the login page after successful signup
+        });
+    </script>
+</body>
+</html>

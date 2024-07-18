@@ -1,0 +1,66 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #160101de;
+    background-image: url(gaming.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Georgia, 'Times New Roman', Times,sans-serif ;
+}
+
+.login-container {
+    background-color: rgba(4, 144, 200, 0.733);;
+    padding: 3em;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgb(227, 9, 9);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 2em;
+}
+
+.input-group {
+    margin-bottom: 1em;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 1em;
+}
+
+.input-group input {
+    width: 80%;
+    padding: 0.6em;
+    border: none;
+    border-radius: 0px;
+}
+
+.button {
+    background-color: #ff4757;
+    border: none;
+    padding: 1em 2em;
+    border-radius: 10px;
+    color: #c70b0b;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 30px;
+    height: 5px;
+   display: flex; 
+   padding-bottom: 1em;
+}
+
+button:hover {
+    background-color: #4f2818;
+}
+
+.error-message {
+    color: #ff6b81;
+    margin-top: 1em;
+}

@@ -1,0 +1,23 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(xox\ game.jpg);
+    background-size: cover;
+   
+    color: #da2626;
+    margin: 0;
+}
+
+.login-container {
+    background-color: rgba(7, 9, 0, 0.34);
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: #f5f4f4;
+    max-width: 400px;
+    width: 100%;
+}
+
+.error-message {
+    color: #ff6b81;
+    margin-top: 1em;
+}
